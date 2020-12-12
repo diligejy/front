@@ -237,12 +237,12 @@ body {
 
 header .logo_box{
     position: absolute;
-    right: 35px;
+    right: 25px;
     top: 75px;
 }
 
 header .logo_box img {
-    width: 100px;
+    width: 120px;
 }
 
 #wrap header nav {
@@ -286,6 +286,31 @@ header .logo_box img {
     width: 33.333%;
     height: 100%;
     position: absolute;
+    transition: all .5s;
+}
+
+#container .content.this{
+    width: 100%;
+    left: 0
+    !important;
+}
+
+#container .content.prev{
+    width: 100%;
+    left: -100%
+    !important;
+}
+
+#container .content.next{
+    width: 100%;
+    left: 100%
+    !important;
+}
+
+#container .content.this:before, #container .content.this.after,
+
+#container .content.this .conbox:before{
+    opacity: 0;
 }
 
 #container #menu1{
@@ -321,11 +346,11 @@ header .logo_box img {
 }
 
 #container .content:after{
-    left: 30px;
+    left: 50px;
     top: 180px;
     font-size: 25px;
     font-weight: 700;
-    color:  #5075fa;
+    color:  #727ff3;
 }
 #container #menu1:after{
     content: "회사소개";

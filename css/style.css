@@ -239,6 +239,7 @@ header .logo_box{
     position: absolute;
     right: 25px;
     top: 75px;
+    cursor: pointer;
 }
 
 header .logo_box img {
@@ -283,7 +284,7 @@ header .logo_box img {
 }
 
 #container .content{
-    width: 33.333%;
+    width: 25%;
     height: 100%;
     position: absolute;
     transition: all .5s;
@@ -320,14 +321,18 @@ header .logo_box img {
 }
 
 #container #menu2{
-    left: 33.333%;
+    left: 25%;
     background: url(../img/content_bg/content_bg2_test.png);
 }
 
 #container #menu3{
-    left: 66.666%;
+    left: 50%;
     background: url(../img/content_bg/content_bg3_test.png);
+}
 
+#container #menu4{
+    left:75%;
+    background: url(../img/content_bg/content_bg4_test.png);
 }
 
 #container .content:before, #container .content:after {
@@ -360,9 +365,11 @@ header .logo_box img {
     content: "서비스소개";
 }
 #container #menu3:after{
+    content: "NEWS";
+}
+#container #menu4:after{
     content: "Contact Us";
 }
-
 #container .content h2{
     opacity: 0;
 }
@@ -420,6 +427,14 @@ header .logo_box img {
     background-size: 100%;
 } */
 
+#container .content .conbox .content_wrap{
+    opacity: 0;
+}
+
+#container .content.this .conbox .content_wrap{
+    padding: 30px 50px 50px 50px;
+    opacity: 1;
+}
 
 footer {
     width: 180px;

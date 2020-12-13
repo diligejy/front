@@ -308,10 +308,25 @@ header .logo_box img {
     !important;
 }
 
-#container .content.this:before, #container .content.this.after,
+#container .content.this:before, #container .content.this:after,
+#container .content.this .conbox:before, #container .content.prev:before,
+#container .content.prev:after, #container .content.prev .conbox:before,
+#container .content.next:before, #container .content.next:after,
+#container .content.next .conbox:before{
+    opacity: 0;
+    transform: all .6s;
+    transition-delay: .3s;
+
+}
 
 #container .content.this .conbox:before{
+    transform: translate3d(300px, 0, 0);
     opacity: 0;
+    transition: all .6s;
+    transition-delay: .3s;
+}
+#container .content.this:after{
+    transform:translate3d(-300px, 0, 0);
 }
 
 #container #menu1{
@@ -403,6 +418,8 @@ header .logo_box img {
     font-size: 28px;
     font-weight: 400;
     opacity: 1;
+    transition: all .6s;
+    transition-delay: 1.2s;
 }
 
 #container .content.this h2:after{
@@ -455,6 +472,11 @@ header .logo_box img {
 #container .content.this .conbox .content_wrap{
     padding: 30px 50px 50px 50px;
     opacity: 1;
+}
+#container .content.this .conbox:before{
+    opacity: 0;
+    transition: all .6s;
+    transition-delay: .3s;
 }
 
 

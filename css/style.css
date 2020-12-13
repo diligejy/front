@@ -370,6 +370,27 @@ header .logo_box img {
 #container #menu4:after{
     content: "Contact Us";
 }
+
+#container .content{
+    top: -100%;
+    transition: all .8s;
+}
+
+#container .content:nth-of-type(2){
+    transition-delay: .3s;
+}
+
+#container .content:nth-of-type(3){
+    transition-delay: .6s;
+}
+#container .content:nth-of-type(4){
+    transition-delay: .8s;
+}
+
+#container.start .content{
+    top: 0;
+}
+
 #container .content h2{
     opacity: 0;
 }
@@ -435,6 +456,8 @@ header .logo_box img {
     padding: 30px 50px 50px 50px;
     opacity: 1;
 }
+
+
 
 footer {
     width: 180px;

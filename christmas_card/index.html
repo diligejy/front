@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화이팅!</title>
+    
+    <link rel="shortcut icon" href="https://i0.wp.com/valleyviewchristmastrees.org/wp-content/uploads/2017/08/SantaClasuse.png?fit=230%2C278&ssl=1">
+    <meta property="og:image" content="https://images.christiantoday.co.kr/data/images/full/297410/image.jpg?w=654">
+    <meta property="og:title" content="진영이가 보내는 카드">
+    <meta property="og:description" content="내 마음이야!">
+
+
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Poor Story', cursive;
+        }
+
+        body {
+            background-color: #9b070f;
+        }
+
+        .letter-close {
+            display: block;
+        }
+
+        .letter-open {
+            display: none;
+        }
+
+        .envelope {
+            background-image: url('https://pngimg.com/uploads/envelope/envelope_PNG18366.png');
+            background-size: cover;
+            background-position: center;
+            width: 200px;
+            height: 200px;
+            margin: 200px auto 0 auto;
+            cursor: pointer;
+        }
+
+        .envelope-msg {
+            color: white;
+            text-align: center;
+        }
+
+        .jy {
+            background-image: url('https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/Webp.net-gifmaker+(1).gif');
+            background-size: cover;
+            background-position: center;
+            background-color: white;
+            width: 200px;
+            height: 200px;
+            margin: 100px auto 0 auto;
+            border-radius: 100px;
+            border: 5px solid white;
+            box-shadow: 0px 0px 10px 0px white;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .msgbox {
+            background-color: ivory;
+            width: 400px;
+            margin: auto;
+            font-size: 20px;
+            color: brown;
+            line-height: 30px;
+            padding: 30px;
+            box-shadow: 0px 0px 10px 0px white;
+
+        }
+
+        .from {
+            text-align: right;
+            margin: 0;
+        }
+
+        @media screen and (max-width: 760px) {
+            .envelope {
+                margin: 150px auto 0px auto;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .jy {
+                width: 150px;
+                height: 150px;
+                margin: 70px auto 0 auto;
+            }
+
+            .msgbox {
+                width: 300px;
+                padding: 20px;
+            }
+        }
+    </style>
+
+    <script>
+        function open_letter() {
+            document.getElementsByClassName("letter-close")[0].style.display = 'none'
+            document.getElementsByClassName("letter-open")[0].style.display = 'block'
+        }
+
+        function go_jy() {
+            alert('헤헷 ㅎㅎㅎ')
+
+        }
+    </script>
+</head>
+
+<body>
+    <div class="letter-close">
+        <div class="envelope" onclick="open_letter()">
+        </div>
+        <h2 class="envelope-msg">봉투를 열어보셈!</h2>
+    </div>
+
+
+    <div class="letter-open">
+        <div class="jy" onclick="go_jy()"></div>
+        <h1>2020년 고생 많았음!</h1>
+        <div class="msgbox">
+            제목 <br/>
+
+            내용 <br/>
+            <p class="from">진영이가</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+/* font-family: 'Roboto', sans-serif; */
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+    color: #353535;
+    font-family: "Roboto", "NanumSquare", sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+.intro_section1 .logo {
+    position: absolute;
+    top: 87px;
+    left: 70px;
+}
+
+.intro_section1 .logo img {
+    width: 100px;
+}
+
+.intro_section1 .site_title {
+    position: absolute;
+    bottom: 70px;
+    left: 86px;
+    font-weight: 800;
+    font-size: 22px;
+    letter-spacing: -.55px;
+    z-index: 1;
+}
+
+
+.intro_section1 .main_title {
+    font-size: 7vw;
+    font-family: 'Nanum Myeongjo';
+    font-weight: 700;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    margin-top: -13vw;
+    margin-left: -22vw;
+    width: 100%;
+}
+
+.intro_section1 .sub_title {
+    font-size: 1.2vw;
+    font-weight: 500;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    margin-top: 10vw;
+    margin-left: -11vw;
+}

@@ -1,8 +1,41 @@
-.body__container {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color : #333;
+body {
+    margin: 0;
+    padding: 0;
 }
 
+header {
+    background: white;
+    border-bottom: 1px solid;
+}
 
+.container {
+    width: 600px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.container-left {}
+
+.logo {
+    float: left;
+    margin-right: 5px;
+}
+
+.logo img {
+    display: block;
+}
+
+.menu {
+    float: left;
+}
+
+.menu .menu-item {
+    float: left;
+    padding: 8px 10px;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}

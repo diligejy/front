@@ -1,0 +1,15 @@
+a:hover {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    transition: 0.4s;
+}
+
+.box:hover {
+    width: 200px;
+}
